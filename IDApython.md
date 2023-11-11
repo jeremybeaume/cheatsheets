@@ -12,7 +12,7 @@
   * `A` : `ida_bytes.create_strlit(ea, size, 0)`
   * `Y` : `idc.SetType(ea, "type")`
   * `M` : `idc.op_enum(ea, n, enum_id, 0)`
-  * `T` : `idc.op_stroff(ea, 0, struc_id, 0)`
+  * `T` : `idc.op_stroff(ea, n, struc_id, 0)`
   * `H` : `idc.op_hex(ea, n)` / `idc.op_dec(ea, n)`
   * `R` : `idc.op_chr(ea, n)`
   * `B` : `idc.op_bin(ea, n)`
@@ -189,7 +189,7 @@ idc.get_member_size(struc_id, offset)
 
 Apply struc offset to operand (shortcut : 'T'):
 ```python
-idc.op_stroff(ea, 0, struc_id, 0)
+idc.op_stroff(ea, n, struc_id, 0)
 ```
 
 Comments :
